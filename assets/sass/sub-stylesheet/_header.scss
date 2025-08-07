@@ -1,0 +1,271 @@
+/* @@@@@@@@@@@ Header Section Start here  @@@@@@@@@@@@@@@@ */
+.header-section {
+    @include breakpoint(max-lg) {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: $white-color !important;
+        box-shadow: 0 0 10px rgba(81, 136, 136, .30);
+    }
+    &.transparent-header {
+        @extend %abs;
+        width: 100%;
+    }
+    &.style-2 {
+        .menu-fixed {
+            .logo {
+                &.style-2 {
+                    a {
+                        display: none;
+                        &:last-child {
+                            @include breakpoint(lg) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+		.logo {
+            @extend %rel;
+            &.style-2 {
+                a {
+                    @include breakpoint(max-lg) {
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                    &:last-child {
+                        @include breakpoint(lg) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+			&::before {
+				@include breakpoint(xl) {
+					position: absolute;
+				    content: "";
+				    border-left: 200px solid transparent;
+				    border-right: 200px solid transparent;
+				    border-top: 200px solid $theme-color;
+				    left: 50%;
+				    top: 0;
+                    margin-left: -190px;
+                    margin-top: -30px;
+                    @include transition($transition);
+				}
+			}
+			img {
+                @extend %rel;
+				z-index: 9;
+			}
+		}
+    }
+    &.bg-ash {
+        .menu-bar {
+            color: $title-color;
+        }
+    }
+    .header-area {
+        @extend %rel;
+        z-index: 111;
+        &.menu-fixed {
+            @include breakpoint(lg) {
+                position: fixed;
+                width: 100%;
+                z-index: 99;
+                background: $white-color;
+                box-shadow: 0 0 3px rgba(81, 136, 136, .10);
+            }
+        }
+    }
+    .primary-menu {
+        @extend %flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            a {
+                display: block;
+                img {
+                    display: block;
+                }
+            }
+        }
+        .main-area {
+            @extend %flex;
+            align-items: center;
+            @include breakpoint(max-lg) {
+                display: none;
+            }
+            .main-menu {
+                ul {
+                    @extend %flex;
+                    padding: 20px 0;
+                    margin: 0;
+                    @include breakpoint(lg) {
+                        padding: 0;
+                    }
+                    li {
+                        padding: 0;
+                        &:last-child {
+                            a {
+                                border-bottom: none;
+                            }
+                        }
+                        a {
+                            padding: 10px 0px;
+                            color: $title-color;
+                            font-size: $fs-base;
+                            display: block;
+                            border-bottom: 1px solid #44444412;
+                            @include transition($transition);
+                            @include breakpoint(lg) {
+                                padding: 33px 20px;
+                                border-bottom: none;
+                            }
+                        }
+                        ul {
+                            padding: 0;
+                            @include breakpoint(lg) {
+                                position: absolute;
+                                min-width: 200px;
+                                background: $white-color;
+                                box-shadow: 0 0 5px rgba(136, 136, 136, .10);
+                                display: block;
+                                top: 100%;
+                                transform: scaleY(0);
+                                transform-origin: top;
+                                z-index: 999;
+                                transition: all .3s ease;
+                            }
+                            li {
+                                a {
+                                    font-size: 98%;
+                                    width: 100%;
+                                    padding-left: 20px;
+                                    @include breakpoint(lg) {
+                                        padding: 10px 15px;
+                                        border-bottom: 1px solid #6969691f;
+                                    }
+                                    &:hover {
+                                        @include breakpoint(lg) {
+                                            padding-left: 20px;
+                                            color: $white-color;
+                                            background: $theme-color;
+                                        }
+                                    }
+                                }
+                                &.active, &:hover {
+                                    > a {
+                                        color: $theme-color;
+                                        @include breakpoint(lg) {
+                                            background: $theme-color;
+                                            color: $white-color;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    a {
+                                        border-bottom: none;
+                                    }
+                                }
+                                &.menu-item-has-children {
+                                    margin-right: 0px;
+                                    a {
+                                        &::after {
+                                            @include breakpoint(lg) {
+                                                right: 15px;
+                                                transform: translateY(-50%) rotate(-90deg);
+                                            }
+                                        }
+                                    }
+                                }
+                                ul {
+                                    left: 100%;
+                                    top: 0;
+                                }
+                            }
+                        }
+                        &.menu-item-has-children {
+                            position: relative;
+                            @include breakpoint(lg) {
+                                margin-right: 16px;
+                            }
+                            &.open {
+                                >a {
+                                    &::after {
+                                        @include breakpoint(max-lg) {
+                                            transform: translateY(-50%) rotate(-180deg);
+                                        }
+                                    }
+                                }
+                            }
+                            >a {
+                                @extend %rel;
+                                &::after {
+                                    @extend %abs;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    font-weight: 400;
+                                    content: "\ea99" !important;
+                                    font-family: IcoFont !important;
+                                }
+                            }
+                        }
+                        &:hover{
+                            >ul {
+                                transform: scaleY(1);
+                            }
+                        }
+                    }
+                }
+            }
+            .header-btn {
+                margin-left: 15px;
+                .lab-btn {
+                    display: block;
+                    padding: 13px 30px;
+                }
+            }
+        }
+        &.open {
+            .main-area {
+                @include breakpoint(max-lg) {
+                    display: block;
+                    width: 100%;
+                    ul {
+                        width: 100%;
+                        border-bottom: 1px solid #ffffff1f;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        li {
+                            width: 100%;
+                            margin-right: 0;
+                            a {}
+                            ul {
+                                position: static;
+                                display: none;
+                                ul {
+                                    li {
+                                        a {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu-bar {
+        font-size: 30px;
+        @extend %flex;
+    }
+}

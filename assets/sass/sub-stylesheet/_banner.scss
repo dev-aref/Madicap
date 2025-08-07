@@ -1,0 +1,227 @@
+/* @@@@@@@@@@@@@  Banner Section Start Here  @@@@@@@@@@@@@@ */
+.banner {
+	@include breakpoint(max-lg) {
+		margin-top: 58px !important;
+	}
+	&.style-1 {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	    z-index: 11;
+		@extend %rel;
+        .banner-top {
+			padding: 150px 0;
+        }
+	    .banner-content-area {
+	    	.banner-content {
+				h1 {
+					line-height: 1.2;
+					@include breakpoint(max-lg) {
+						font-size: 42px;
+					}
+				}
+	    		.banner-btn {
+	    			margin-top: 40px;
+	    			position: relative;
+	    			.btn {
+	    				background: $theme-color;
+	    				color: $white-color;
+	    			}
+	    			.video-btn {
+					    position: absolute;
+					    top: 0;
+					    right: 42%;
+					    @include breakpoint(max-md) {
+				    	    top: 100px;
+						    right: 50%;
+						    transform: translateX(50%);
+						}
+					    @include breakpoint(max-sm) {
+							display: none;
+						}
+					    .video-icon {
+					    	position: relative;
+                            outline: none;
+                            display: inline-block;
+					    	img {
+					    		display: block;
+					    	}
+					    }
+					}
+	    		}
+	    	}
+	    }
+	    .banner-bottom {
+		    background: #ffffffa8;
+            padding: 20px;
+			@extend %rel;
+			max-width: 1170px;
+			margin: 0 auto;
+		    .banner-bottom-pattan {
+			    background: url(../../assets/images/banner/banner-bottom-pattan.png);
+			    position: absolute;
+			    width: 50%;
+			    height: 100%;
+			    left: 0;
+			    bottom: 0;
+			}
+			.bottom-wrapper {
+                @extend %flex;
+				justify-content: space-between;
+				@include breakpoint(md) {
+					@include breakpoint(max-xl) {
+						justify-content: space-around;
+					}
+				}
+				.post-item {
+                    @extend %flex;
+	    			align-items: center;
+				    z-index: 1;
+	    			position: relative;
+					padding: 20px 0;
+	    			@include breakpoint(max-md) {
+    				    width: 100%;
+					}
+					@include breakpoint(lg) {
+    				    padding: 0;
+	    			}
+	    			.post-thumb {
+	    				padding-right: 15px;
+                    }
+                    .post-content {
+                        h6, h5 {
+                            margin-bottom: 0;
+						}
+						h6 {
+							font-weight: normal;
+							margin-bottom: 5px;
+							font-family: $libre;
+						}
+						h5 {
+							font-size: 18px;
+							font-weight: 500;
+						}
+                    }
+	    			&:nth-child(1) h5 {
+	    				color: #82cf09;
+	    			}
+	    			&:nth-child(2) h5 {
+	    				color: #00baff;
+	    			}
+	    			&:nth-child(3) h5 {
+	    				color: #9160ff;
+	    			}
+			    }
+			}
+		}
+	}
+
+	&.style-2 {
+	    background-size: cover;
+	    background-repeat: no-repeat;
+		@include breakpoint(sm) {
+			background-position: center;
+		}
+		@include breakpoint(xl) {
+			padding-bottom: 150px;
+	    }
+	    .banner-content-area {
+			@extend %rel;
+	    	&::before {
+	    		@include breakpoint(xl) {
+	    		    position: absolute;
+				    content: "";
+				    border-left: 500px solid transparent;
+				    border-right: 500px solid transparent;
+				    border-top: 800px solid #fff;
+				    left: 50%;
+				    top: 0;
+				    margin-left: -670px;
+					margin-top: -270px;
+				}
+	    	}
+	    	.banner-content {
+				@extend %rel;
+				z-index: 9;
+				margin-top: 20px;
+				@include breakpoint(sm) {
+					margin-top: 150px;
+				}
+				h2 {
+					font-size: 42px;
+					line-height: 1.2;
+					@include breakpoint(md) {
+						font-size: 60px;
+					}
+					.primary-color {
+						color: $primary-color;
+						display: block;
+						@include breakpoint(xl) {
+							font-size: 72px;
+						}
+					}
+				}
+	    		.banner-btn {
+	    			display: inline-block;
+					@extend %rel;
+    			    margin-left: 70px;
+					margin-top: 80px;
+					@include breakpoint(max-sm) {
+						display: none;
+					}
+    			    .video-btn {
+    			    	display: block;
+    			    	.video-icon {
+    			    		display: block;
+							outline: none;
+							@extend %rel;
+    			    		img {
+    			    			display: block;
+							}
+							.wave-pulse:after,.wave-pulse:before {
+								// border-color: $theme-color;
+							}
+						}
+					}
+					.video-content {
+						@extend %abs;
+						left: calc(100% + 50px);
+						width: 115px;
+						top: 50%;
+						@include transform(translateY(-50%));
+						@include breakpoint(max-md) {
+							display: none;
+						}
+					}
+	    		}
+	    	}
+	    }
+	}
+}
+
+
+
+// 
+.page-header {
+	padding: 100px 0;
+	@include breakpoint(max-sm) {
+		background-size: cover;
+	}
+	@include breakpoint(max-lg) {
+		margin-top: 58px;
+	}
+	@include breakpoint(lg) {
+		padding: 150px 0;
+	}
+	.page-header-area {
+		@include breakpoint(max-sm) {
+			text-align: center;
+		}
+	}
+	.breadcrumb  {
+		padding: 0;
+		@include breakpoint(max-sm) {
+			justify-content: center;
+		}
+	}
+}
