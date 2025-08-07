@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- link of css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Medicap</title>
+</head>
+<body>
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!--search area-->
+    <div class="search-input">
+        <div class="search-close">
+            <i class="icofont-close-circled"></i>
+        </div>
+        <form>
+            <input type="text" name="text" placeholder="Search Heare">
+            <button class="search-btn" type="submit">
+                <i class="icofont-search-2"></i>
+            </button>
+        </form>
+    </div>
+    <!-- search area -->
+
+    <!-- desktop menu start here -->
+    <header class="header-section bg-ash">
+        <div class="header-area">
+            <div class="container">
+                <div class="primary-menu">
+                    <div class="logo py-2">
+                        <a href="index.html"><img src="assets/images/logo/02.png" alt="logo"></a>
+                    </div>
+                    <div class="menu-bar d-lg-none">
+                        <i class="icofont-navigation-menu"></i>
+                    </div>
+                    <div class="main-area">
+                        <div class="main-menu d-flex flex-wrap align-items-center justify-content-center w-100">
+                            <ul class="lab-ul">
+                                <li>
+                                    <a href="#0">Home</a>
+                                    <ul class="lab-ul">
+                                        <li><a href="index.html">Home Page One</a></li>
+                                        <li><a href="index-2.html">Home Page Two</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li>
+                                    <a href="#0">Pages</a>
+                                    <ul class="lab-ul">
+                                        <li>
+                                            <a href="#0">Services</a>
+                                            <ul class="lab-ul">
+                                                <li><a href="service.html">Service</a></li>
+                                                <li><a href="service-single.html">Service Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#0">Portfolios</a>
+                                            <ul class="lab-ul">
+                                                <li><a href="portfolio.html">Portfolio style 1</a></li>
+                                                <li><a href="portfolio-2.html">Portfolio style 2</a></li>
+                                                <li><a href="portfolio-single.html">Portfolio style 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="team.html">Team Membar</a></li>
+                                        <li><a href="timetable.html">Time Table</a></li>
+                                        <li><a href="history.html">History Page</a></li>
+                                        <li><a href="404.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#0">Blog</a>
+                                    <ul class="lab-ul">
+                                        <li><a href="blog.html">Blog Style 1</a></li>
+                                        <li><a href="blog-2.html">Blog style 2</a></li>
+                                        <li class="active"><a href="blog-3.html">Blog style 3</a></li>
+                                        <li><a href="blog-single.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#0">Shop</a>
+                                    <ul class="lab-ul">
+                                        <li><a href="shop.html">Products Page</a></li>
+                                        <li><a href="shop-single.html">Products Details</a></li>
+                                        <li><a href="cart-page.html">Cart Page</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <ul class="lab-ul search-cart">
+                                <li>
+                                    <div class="search-option">
+                                        <div class="icon icon-search"><i class="icofont-search-2"></i></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart-option">
+                                        <div class="icon icon-check"><i class="icofont-cart-alt"></i></div>
+                                        <span class="count-item">2</span>
+                                        <div class="cart-content">
+                                            <div class="cart-item">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/shop/01.jpg" alt="cart">
+                                                </div>
+                                                <div class="cart-des">
+                                                    <a href="#">Product Title Hore</a>
+                                                    <p>$20.00</p>
+                                                </div>
+                                                <div class="cart-btn">
+                                                    <a href="#"><i class="icofont-close-circled"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item">
+                                                <div class="cart-img">
+                                                    <img src="assets/images/shop/02.jpg" alt="cart">
+                                                </div>
+                                                <div class="cart-des">
+                                                    <a href="#">Product Title Hore</a>
+                                                    <p>$20.00</p>
+                                                </div>
+                                                <div class="cart-btn">
+                                                    <a href="#"><i class="icofont-close-circled"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="cart-bottom">
+                                                <div class="cart-subtotal">
+                                                    <p>Total: <b class="float-right">$40.00</b></p>
+                                                </div>
+                                                <div class="cart-action">
+                                                    <a href="#" class="lab-btn"><span>View Cart</span></a>
+                                                    <a href="#" class="lab-btn"><span>Check Out</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- desktop menu ending here -->
+
+    <!-- banner section start here -->
+	<div class="page-header bg_img" style="background-image: url(assets/images/banner/page-header/01.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-header-area">
+                        <h3 class="page-header-title">Blog List Style</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-transparent mb-0">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blog Style 3</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner section ending here -->
+    
+    <!-- Blog section start here -->
+    <div class="blog-section blog-page padding-tb">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <article>
+                        <div class="section-wrapper">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="post-item-2">
+                                        <div class="post-item-inner">
+                                            <div class="post-thumb">
+                                                <a href="blog-single.htmnl"><img src="assets/images/blog/01.jpg" alt="lab-blog"></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3><a href="blog-single.html">Business Ueporting Rouncil Them Could Plan</a></h3>
+                                                <div class="author-date">
+                                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2019</a>
+                                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
+                                                    <a href="#" class="comments"><i class="icofont-speech-comments"></i>24 Comments</a>
+                                                </div>
+                                                <p>Completely deploy focused supply chains rather than viraling an e-services productivate pandemc experiences via interoperable niche markets. Dramatically incentivize superior functionalities with Rapidiously evolve impactful core competencies without web-enabled vortals</p>
+                                                <a href="blog-single.html" class="lab-btn"><span>Read More <i class="icofont-rounded-double-right"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="post-item-2 slider-post">
+                                        <div class="post-item-inner">
+                                            <div class="post-thumb post-thumb-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="assets/images/blog/02.jpg" alt="blog">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="assets/images/blog/03.jpg" alt="blog">
+                                                    </div>
+                                                </div>
+                                                <div class="post-thumb-slider-next"><i class="icofont-double-left"></i></div>
+                                                <div class="post-thumb-slider-prev"><i class="icofont-double-right"></i></div>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3><a href="blog-single.html">Business Ueporting Rouncil Them Could Plan</a></h3>
+                                                <div class="author-date">
+                                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2019</a>
+                                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
+                                                    <a href="#" class="comments"><i class="icofont-speech-comments"></i>24 Comments</a>
+                                                </div>
+                                                <p>Completely deploy focused supply chains rather than viraling an e-services productivate pandemc experiences via interoperable niche markets. Dramatically incentivize superior functionalities with Rapidiously evolve impactful core competencies without web-enabled vortals</p>
+                                                <a href="blog-single.html" class="lab-btn"><span>Read More <i class="icofont-rounded-double-right"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="post-item-2 video-post">
+                                        <div class="post-item-inner">
+                                            <div class="post-thumb">
+                                                <div class="video-thumb">
+                                                    <img src="assets/images/blog/04.jpg" alt="video">
+                                                    <a href="https://www.youtube.com/embed/7aSIHK_xaHM" data-rel="lightcase" class="video-icon"><i class="icofont-youtube-play"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3><a href="blog-single.html">Business Ueporting Rouncil Them Could Plan</a></h3>
+                                                <div class="author-date">
+                                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2019</a>
+                                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
+                                                    <a href="#" class="comments"><i class="icofont-speech-comments"></i>24 Comments</a>
+                                                </div>
+                                                <p>Completely deploy focused supply chains rather than viraling an e-services productivate pandemc experiences via interoperable niche markets. Dramatically incentivize superior functionalities with Rapidiously evolve impactful core competencies without web-enabled vortals</p>
+                                                <a href="blog-single.html" class="lab-btn"><span>Read More <i class="icofont-rounded-double-right"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="post-item-2 qute-post">
+                                        <div class="post-item-inner">
+                                            <div class="post-thumb">
+                                                <div class="qute-content">
+                                                    <img src="assets/images/blog/quote.png" alt="qute">
+                                                    <h5>Rapdiou Qntegrat Distrbute Supply Chains Through Markey Position Bestng Chans Throug Marke Posito Bestin Practces Ieractve Fashon Sound Qources Fashion Economically And Sound Qources</h5>
+                                                </div>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3><a href="blog-single.html">Business Ueporting Rouncil Them Could Plan</a></h3>
+                                                <div class="author-date">
+                                                    <a href="#" class="date"><i class="icofont-calendar"></i>July 12, 2019</a>
+                                                    <a href="#" class="admin"><i class="icofont-ui-user"></i>Somrat Islam</a>
+                                                    <a href="#" class="comments"><i class="icofont-speech-comments"></i>24 Comments</a>
+                                                </div>
+                                                <p>Completely deploy focused supply chains rather than viraling an e-services productivate pandemc experiences via interoperable niche markets. Dramatically incentivize superior functionalities with Rapidiously evolve impactful core competencies without web-enabled vortals</p>
+                                                <a href="blog-single.html" class="lab-btn"><span>Read More <i class="icofont-rounded-double-right"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="paginations">
+                                        <ul class="d-flex flex-wrap lab-ul justify-content-center">
+                                            <li>
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li class="d-none d-sm-block">
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li class="d-none d-sm-block">
+                                                <a href="#" class="active">3</a>
+                                            </li>
+                                            <li>
+                                                <a class="dot">...</a>
+                                            </li>
+                                            <li class="d-none d-sm-block">
+                                                <a href="#">9</a>
+                                            </li>
+                                            <li class="d-none d-sm-block">
+                                                <a href="#">10</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">11</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-12">
+                    <aside>
+                        <div class="widget widget-search">
+                            <form action="/" class="search-wrapper">
+                                <input type="text" name="s" placeholder="Search">
+                                <button type="submit"><i class="icofont-search-2"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="widget widget-category">
+                            <div class="widget-header">
+                                <h5>Post Categorys</h5>
+                            </div>
+                            <ul class="widget-wrapper lab-ul">
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>Themeforest</span><span>06</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>Photodune</span><span>11</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>Codecanyon</span><span>07</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>GRaphicdriver</span><span>09</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>Wordpress</span><span>50</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>Joomla</span><span>20</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>3docean</span><span>93</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>Themeforest</span><span>27</span></a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="widget widget-post">
+                            <div class="widget-header">
+                                <h5>Recent Posts</h5>
+                            </div>
+                            <ul class="widget-wrapper lab-ul">
+                                <li class="d-flex flex-wrap justify-content-between">
+                                    <div class="post-thumb">
+                                        <a href="#"><img src="assets/images/blog/01.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#"><h6>Remo Supo Car Who Foring Emop Dutoring Power</h6></a>
+                                        <p>04 February 2019</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-wrap justify-content-between">
+                                    <div class="post-thumb">
+                                        <a href="#"><img src="assets/images/blog/02.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#"><h6>Remo Supo Car Who Foring Emop Dutoring Power</h6></a>
+                                        <p>04 February 2019</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-wrap justify-content-between">
+                                    <div class="post-thumb">
+                                        <a href="#"><img src="assets/images/blog/03.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#"><h6>Remo Supo Car Who Foring Emop Dutoring Power</h6></a>
+                                        <p>04 February 2019</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex flex-wrap justify-content-between">
+                                    <div class="post-thumb">
+                                        <a href="#"><img src="assets/images/blog/04.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#"><h6>Remo Supo Car Who Foring Emop Dutoring Power</h6></a>
+                                        <p>04 February 2019</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="widget widget-archive">
+                            <div class="widget-header">
+                                <h5>Archives</h5>
+                            </div>
+                            <ul class="widget-wrapper lab-ul">
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>January</span><span>2019</span></a> </li>
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>February</span><span>2018</span></a></li>
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>March</span><span>2017</span></a></li>
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>April</span><span>2016</span></a></li>
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>June</span><span>2015</span></a></li>
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>July</span><span>2014</span></a></li>
+                                <li><a href="#" class="d-flex flex-wrap justify-content-between"><span><i class="icofont-double-right"></i>August</span><span>2013</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="widget widget-instagram">
+                            <div class="widget-header">
+                                <h5>Photo Gallery</h5>
+                            </div>
+                            <ul class="widget-wrapper lab-ul d-flex flex-wrap justify-content-center">
+                                <li><a href="#"><img src="assets/images/gallery/01.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/02.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/03.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/04.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/05.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/06.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/07.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/08.jpg" alt="product"></a></li>
+                                <li><a href="#"><img src="assets/images/gallery/09.jpg" alt="product"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="widget widget-tags">
+                            <div class="widget-header">
+                                <h5>top tags</h5>
+                            </div>
+                            <ul class="widget-wrapper lab-ul">
+                                <li><a href="#">envato</a></li>
+                                <li><a href="#">themeforest</a></li>
+                                <li><a href="#">codecanyon</a></li>
+                                <li><a href="#">videohive</a></li>
+                                <li><a href="#">audiojungle</a></li>
+                                <li><a href="#">3docean</a></li>
+                                <li><a href="#">envato</a></li>
+                                <li><a href="#">themeforest</a></li>
+                                <li><a href="#">codecanyon</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog section ending here -->
+    
+    <!-- footer section start here -->
+    <footer class="relative">
+        <div class="pattan-shape"></div>
+        <div class="footer-top-area">
+            <div class="ft-top-abs-area">
+                <div class="container">
+                    <div class="ft-top">
+                        <div class="ft-item">
+                            <div class="ft-thumb">
+                                <img src="assets/images/footer/icon/01.png" alt="footer">
+                            </div>
+                            <div class="ft-content">
+                                <p><i>Give us a Call</i></p>
+                                <h6>+882-888-123-4567</h6>
+                            </div>
+                        </div>
+                        <div class="ft-item">
+                            <div class="ft-thumb">
+                                <img src="assets/images/footer/icon/02.png" alt="footer">
+                            </div>
+                            <div class="ft-content">
+                                <p><i>Send us a Message</i></p>
+                                <h6>medicap@gmail.com</h6>
+                            </div>
+                        </div>
+                        <div class="ft-item">
+                            <div class="ft-thumb">
+                                <img src="assets/images/footer/icon/03.png" alt="footer">
+                            </div>
+                            <div class="ft-content">
+                                <p><i>Visit our Location</i></p>
+                                <h6>07 Suitland Street 120 USA</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="ft-bottom">
+                        <div class="row justify-content-center no-gutters">
+                            <div class="col-xl-4 col-lg-6 col-12">
+                                <div class="ft-about-part">
+                                    <div class="bg-asb-thumb"></div>
+                                    <div class="ft-title">
+                                        <h4>About Our Medicap</h4>
+                                    </div>
+                                    <div class="ft-body">
+                                        <p>Assertvely communicate mission critical agnments economically sound communities through dynamic Phosfluoresc internal sources</p>
+                                        <a href="#" class="lab-btn"><span>View Website <i class="icofont-double-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-12">
+                                <div class="ft-opening-part">
+                                    <div class="ft-title">
+                                        <h4>Our Opening Hours</h4>
+                                    </div>
+                                    <div class="ft-body">
+                                        <ul class="lab-ul">
+                                            <li><span>Satarday</span><span>09:00 am - 10:00 pm</span></li>
+                                            <li><span>Sunday</span><span>09:00 am - 10:00 pm</span></li>
+                                            <li><span>Monday</span><span>09:00 am - 10:00 pm</span></li>
+                                            <li><span>Tuesday</span><span>09:00 am - 10:00 pm</span></li>
+                                            <li><span>Widnessday</span><span>09:00 am - 10:00 pm</span></li>
+                                            <li><span>Thirsday</span><span>09:00 am - 10:00 pm</span></li>
+                                            <li><span>Friday</span><span>09:00 am - 10:00 pm</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-12">
+                                <div class="ft-map-area">
+                                    <div class="ft-map">
+                                        <iframe src="https://maps.google.com/maps?q=new%40codexcoder&t=&z=17&ie=UTF8&iwloc=&output=embed" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom bg-ash">
+                <div class="container">
+                    <div class="section-wrapper">
+                        <div class="left">
+                            <img src="assets/images/logo/02.png" alt="footer-logo">
+                        </div>
+                        <ul class="right lab-ul">
+                            <li>
+                                <a class="facebook" href="#"><i class="icofont-facebook"></i></a>
+                                <span>Facebook</span>
+                            </li>
+                            <li>
+                                <a class="google" href="#"><i class="icofont-google-plus"></i></a>
+                                <span>Google Plus</span>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#"><i class="icofont-twitter"></i></a>
+                                <span>Twitter</span>
+                            </li>
+                            <li>
+                                <a class="pinterest" href="#"><i class="icofont-pinterest"></i></a>
+                                <span>Pinterest</span>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#"><i class="icofont-linkedin"></i></a>
+                                <span>Linkedin</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-part style-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <p>&copy; 2020 <a href="index.html">Medicap</a>Designed By <a href="https://themeforest.net/user/Labartisan/portfolio" target="_blank">Labartisan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ending here -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+</html>
